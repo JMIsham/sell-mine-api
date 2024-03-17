@@ -24,11 +24,14 @@ async function createAd(ad) {
   const client = await getConnection();
   try {
     const result = await client.query(
-      "INSERT INTO ads (title, description, price, image, user_id, created_at) VALUES ($1, $2, $3, $4, $5, %6) RETURNING *",
-      [ad.title, ad.description, ad.price, ad.image, ad.user_id, Date.now()]
+      "INSERT INTO ads (title, description, price, image, user_id, created_at) VALUES ($1, $2, $3, $4, $5, NOW()) RETURNING *",
+      [ad.title, ad.description, ad.price, ad.image, ad.user_id]
     );
     return result.rows[0];
-  } finally {
+  } catch(error) {
+    console.log(error);
+    throw error
+  }finally {
     client.release();
   }
 }
