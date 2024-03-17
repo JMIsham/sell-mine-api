@@ -3,7 +3,7 @@ info:
   title: Ads API
   version: 1.0.0
 paths:
-  /:
+  /ads:
     get:
       summary: Get all ads
       operationId: getAds
@@ -32,7 +32,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Ad'
-  /{id}:
+  /ads/{id}:
     parameters:
       - name: id
         in: path
