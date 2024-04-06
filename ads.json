@@ -1,0 +1,119 @@
+{
+    "ads": [
+        {
+            "id": 1,
+            "title": "iPhone X",
+            "description": "Brand new iPhone X, never used",
+            "price": 999.99,
+            "image": "iphone-x.jpg",
+            "created_at": "2022-01-01T10:00:00Z",
+            "user_id": 1
+        },
+        {
+            "id": 2,
+            "title": "MacBook Pro",
+            "description": "Used MacBook Pro in good condition",
+            "price": 1499.99,
+            "image": "macbook-pro.jpg",
+            "created_at": "2022-01-02T14:30:00Z",
+            "user_id": 2
+        },
+        {
+            "id": 3,
+            "title": "Samsung Galaxy S21",
+            "description": "Brand new Samsung Galaxy S21",
+            "price": 899.99,
+            "image": "samsung-galaxy-s21.jpg",
+            "created_at": "2022-01-03T11:45:00Z",
+            "user_id": 1
+        },
+        {
+            "id": 4,
+            "title": "Dell XPS 13",
+            "description": "Used Dell XPS 13 in good condition",
+            "price": 1299.99,
+            "image": "dell-xps-13.jpg",
+            "created_at": "2022-01-04T09:30:00Z",
+            "user_id": 3
+        },
+        {
+            "id": 5,
+            "title": "iPad Pro",
+            "description": "Brand new iPad Pro, never used",
+            "price": 799.99,
+            "image": "ipad-pro.jpg",
+            "created_at": "2022-01-05T12:00:00Z",
+            "user_id": 2
+        },
+        {
+            "id": 6,
+            "title": "Google Pixel 6",
+            "description": "Brand new Google Pixel 6",
+            "price": 699.99,
+            "image": "google-pixel-6.jpg",
+            "created_at": "2022-01-06T10:30:00Z",
+            "user_id": 3
+        },
+        {
+            "id": 7,
+            "title": "Microsoft Surface Laptop 4",
+            "description": "Used Microsoft Surface Laptop 4 in good condition",
+            "price": 1199.99,
+            "image": "microsoft-surface-laptop-4.jpg",
+            "created_at": "2022-01-07T13:15:00Z",
+            "user_id": 1
+        },
+        {
+            "id": 8,
+            "title": "OnePlus 9 Pro",
+            "description": "Brand new OnePlus 9 Pro",
+            "price": 599.99,
+            "image": "oneplus-9-pro.jpg",
+            "created_at": "2022-01-08T11:00:00Z",
+            "user_id": 2
+        },
+        {
+            "id": 9,
+            "title": "HP Spectre x360",
+            "description": "Used HP Spectre x360 in good condition",
+            "price": 1099.99,
+            "image": "hp-spectre-x360.jpg",
+            "created_at": "2022-01-09T14:45:00Z",
+            "user_id": 3
+        },
+        {
+            "id": 10,
+            "title": "Sony Xperia 1 III",
+            "description": "Brand new Sony Xperia 1 III",
+            "price": 499.99,
+            "image": "sony-xperia-1-iii.jpg",
+            "created_at": "2022-01-10T12:30:00Z",
+            "user_id": 1
+        }
+        
+    ],
+    "users": [
+        {
+            "id": 1,
+            "name": "John Doe",
+            "email": "john@example.com",
+            "password": "password123",
+            "created_at": "2022-01-01T09:00:00Z"
+        },
+        {
+            "id": 2,
+            "name": "Jane Smith",
+            "email": "jane@example.com",
+            "password": "password456",
+            "created_at": "2022-01-02T13:30:00Z"
+        },
+        {
+            "id": 3,
+            "name": "Alice Johnson",
+            "email": "alice@example.com",
+            "password": "password789",
+            "created_at": "2022-01-03T10:15:00Z"
+        }
+       
+    ]
+}
