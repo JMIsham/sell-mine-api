@@ -15,7 +15,7 @@ async function getAdByIdLocal(id) {
     try {
         const data = await fs.promises.readFile('./ads.json', 'utf8');
         const ads = JSON.parse(data);
-        const ad = ads.find(ad => ad.id === id);
+        const ad = ads.find(ad => ad.id == id);
         return ad;
     } catch (error) {
         console.log(error);
@@ -40,7 +40,7 @@ async function updateAdLocal(id, ad) {
     try {
         const data = await fs.promises.readFile('./ads.json', 'utf8');
         const ads = JSON.parse(data);
-        const index = ads.findIndex(ad => ad.id === id);
+        const index = ads.findIndex(ad => ad.id == id);
         if (index !== -1) {
             ads[index] = { ...ad, id };
             await fs.promises.writeFile('./ads.json', JSON.stringify(ads), 'utf8');
@@ -59,7 +59,7 @@ async function deleteAdLocal(id) {
     try {
         const data = await fs.promises.readFile('./ads.json', 'utf8');
         const ads = JSON.parse(data);
-        const index = ads.findIndex(ad => ad.id === id);
+        const index = ads.findIndex(ad => ad.id == id);
         if (index !== -1) {
             ads.splice(index, 1);
             await fs.promises.writeFile('./ads.json', JSON.stringify(ads), 'utf8');
